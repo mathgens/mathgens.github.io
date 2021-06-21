@@ -1,6 +1,13 @@
+---
+title: Home
+---
 # Mathgens
-There's only one page so far.
+This website has math problem generators.
 
-
-* TOC
-{:toc}
+<ul>
+      {% for p in site.pages %}
+        <li>
+          <a href="{{ p.url }}">{{ p.title }}</a>
+        </li>
+      {% endfor %}
+</ul>
