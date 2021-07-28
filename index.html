@@ -7,10 +7,16 @@ This website has math problem generators and math information.
 <ul>
       {% for p in site.pages %}
         <li>
+              {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+{% for crumb in crumbs offset: 1 %}
+  {% if forloop.last %}
+    / {{ page.title }}
+  {% else %}
+    <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+  {% endif %}
+{% endfor %}
           <a href="{{site.github.baseurl}}{{ p.url }}">{{ p.title }}</a>
-              {% for cat in p.categories %}
-                  [ {{ cat }} ]
-              {% endfor %}
+              <i>{{ p.categories | join: ", " }}</i>
         </li>
       {% endfor %}
 </ul>
