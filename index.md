@@ -2,7 +2,6 @@
 layout: default
 title: Home
 ---
-# Mathgens Home
 This website has math problem generators.
 
 <ul>
