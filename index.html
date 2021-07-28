@@ -7,7 +7,7 @@ This website has math problem generators and math information.
 <ul>
       {% for p in site.pages %}
         <li>
-              {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+              {% assign crumbs = p.url | remove:'/index.html' | split: '/' %}
 {% for crumb in crumbs offset: 1 %}
   {% if forloop.last %}
     / {{ page.title }}
