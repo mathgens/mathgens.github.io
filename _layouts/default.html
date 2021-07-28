@@ -28,7 +28,6 @@
         <span id="logo"></span>
 
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
-        {% include search-lunr.html %}
         {% if site.show_downloads %}
           <div class="downloads">
             <span>Downloads:</span>
@@ -49,7 +48,9 @@
         {% include breadcrumbs.html %}
         <h1>{{ page.title }}</h1>
         {{ content }}
-
+        {{ if search_bar != false }}
+          {% include search-lunr.html %}
+        {{ endif }}
       </section>
       <footer>
         {% if site.github.is_project_page %}
