@@ -26,8 +26,7 @@ categories: [ generator, precalc ]
         <button id="newrose">New Rose Problem</button>
         <button id="newlima">New Limacon Problem</button>
     </p>
-<p><i>Check your graph with Desmos below.</i> <a href="https://desmos.com/calculator">Open Desmos in New Tab</a></p>
-    <iframe src="https://desmos.com/calculator" frameborder="0" width="100%" height="500px"></iframe>
+<p><i>Check your graph with Desmos below.</i>{% include desmos.html %}</p>
 <script defer>
     const randbool = () => Math.random() > .5 ? true : false
     window.onload = () => {
