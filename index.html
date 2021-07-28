@@ -2,12 +2,15 @@
 layout: default
 title: Home
 ---
-This website has math problem generators.
+This website has math problem generators and math information.
 
 <ul>
       {% for p in site.pages %}
         <li>
           <a href="{{site.github.baseurl}}{{ p.url }}">{{ p.title }}</a>
+              {% for cat in p.categories %}
+                  [ {{ cat }} ]
+              {% endfor %}
         </li>
       {% endfor %}
 </ul>
