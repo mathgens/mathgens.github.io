@@ -1,0 +1,121 @@
+---
+layout: default
+title: Equation Typer
+description: Type equations using plain text, then paste them anywhere.
+categories: [tools]
+---
+<style>
+        body {
+            zoom: 125%;
+        }
+
+        textarea {
+            opacity: 0;
+        }
+
+        #textbox {
+            width: 100%;
+        }
+
+        .inserter {
+            font-weight: bold;
+        }
+    </style>
+    <table>
+        <tr>
+            <td>
+                <button id="copier" width="50%">Copy</button>
+                <button id="clearer" width="50%">Clear</button>
+            </td>
+            <td>
+                <input type="text" name="textbox" id="textbox" placeholder="Enter equation here" spellcheck="false">
+            </td>
+        </tr>
+        <tr>
+            <td><b>Subscripts</b></td>
+            <td>
+                <button class="inserter">₁</button>
+                <button class="inserter">₂</button>
+                <button class="inserter">₃</button>
+                <button class="inserter">₄</button>
+                <button class="inserter">₅</button>
+                <button class="inserter">₆</button>
+                <button class="inserter">₇</button>
+                <button class="inserter">₈</button>
+                <button class="inserter">₉</button>
+                <button class="inserter">₀</button>
+                <button class="inserter">₋</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Superscripts</b>
+            </td>
+            <td>
+                <button class="inserter">¹</button>
+                <button class="inserter">²</button>
+                <button class="inserter">³</button>
+                <button class="inserter">⁴</button>
+                <button class="inserter">⁵</button>
+                <button class="inserter">⁶</button>
+                <button class="inserter">⁷</button>
+                <button class="inserter">⁸</button>
+                <button class="inserter">⁹</button>
+                <button class="inserter">⁰</button>
+                <button class="inserter">⁻</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Math/Greek</b>
+            </td>
+            <td>
+                <button class="inserter">±</button>
+                <button class="inserter">θ</button>
+                <button class="inserter">α</button>
+                <button class="inserter">π</button>
+                <button class="inserter">°</button>
+                <button class="inserter">÷</button>
+                <button class="inserter">×</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Arrows</b>
+            </td>
+            <td>
+                <button class="inserter">←</button>
+                <button class="inserter">→</button>
+                <button class="inserter">↔</button>
+            </td>
+        </tr>
+    </table>
+    <textarea id="copyarea" aria-hidden="true"></textarea>
+    <script>
+        let textfield = document.getElementById("textbox")
+        let buttons = document.querySelectorAll(".inserter")
+        let copybtn = document.getElementById("copier")
+        let clearbtn = document.getElementById("clearer")
+        buttons.forEach(btn => {
+            btn.addEventListener("click", _e => {
+                textfield.value += btn.innerText
+                textfield.focus()
+            })
+        })
+        copybtn.addEventListener("click", _e => {
+            /* navigator.clipboard.writeText(textfield.value)
+                .then(() => alert("copied!"))
+                .catch(err => alert("Error: ", err)) */
+            let ta = document.getElementById("copyarea")
+            ta.value = textfield.value
+            ta.focus()
+            ta.select()
+            ta.setSelectionRange(0, 99999)
+            document.execCommand("copy")
+            textfield.focus()
+        })
+        clearbtn.addEventListener("click", _e => {
+            textfield.value = ""
+            textfield.focus()
+        })
+    </script>
