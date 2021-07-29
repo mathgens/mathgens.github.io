@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Quadratic Formula
+categories: [info, algebra2]
 enable_mathjax: true
 ---
 Given a quadratic equation in the form $$Ax^2 + Bx + C = 0$$ use
