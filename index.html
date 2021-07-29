@@ -2,14 +2,14 @@
 layout: default
 title: Home
 ---
-This website has math problem generators and math information. 
+Welcome! This website has math problem generators and math information. 
 
 <ul>
       {% for p in site.pages %}
             {% if p.hidden != true and p.title | size  > 0 %}
         <li>
           <a href="{{site.github.baseurl}}{{ p.url }}">{{ p.title }}</a>
-              <i>{{ p.categories | join: ", " }}</i>{{p.dir}}
+              <i>{{ p.categories | join: ", " }}</i>
         </li>
             {% endif %}
       {% endfor %}
