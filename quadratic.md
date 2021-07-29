@@ -4,8 +4,8 @@ title: Quadratic Formula
 categories: [info, algebra2]
 enable_mathjax: true
 ---
-Given a quadratic equation in the form $$Ax^2 + Bx + C = 0$$ use
+Given a quadratic equation in the form $$Ax^2 + Bx + C = 0$$, where A, B, and C are constants, use
 
-$$x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}$$
+$$x=\frac{-B\pm\sqrt{B^{2}-4AC}}{2A}$$
 
 to find the solutions to the quadratic equation.
