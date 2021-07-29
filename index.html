@@ -6,10 +6,12 @@ This website has math problem generators and math information.
 
 <ul>
       {% for p in site.pages %}
+            {% if p.hidden != true and p.title != "" %}
         <li>
           <a href="{{site.github.baseurl}}{{ p.url }}">{{ p.title }}</a>
               <i>{{ p.categories | join: ", " }}</i>
         </li>
+            {% endif %}
       {% endfor %}
 </ul>
 
