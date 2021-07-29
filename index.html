@@ -9,7 +9,7 @@ This website has math problem generators and math information.
             {% if p.hidden != true and p.title | size  > 0 %}
         <li>
           <a href="{{site.github.baseurl}}{{ p.url }}">{{ p.title }}</a>
-              <i>{{ p.categories | join: ", " }}</i>
+              <i>{{ p.categories | join: ", " }}</i>{{p.dir}
         </li>
             {% endif %}
       {% endfor %}
