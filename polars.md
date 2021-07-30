@@ -4,6 +4,7 @@ title: Polar Formulas
 categories: info, precalc
 enable_mathjax: true
 ---
+
 $$(r,\theta)$$
 
 -   r is directed distance
@@ -50,6 +51,7 @@ $$r = a\csc\theta$$ is the same as $$y = a$$(horizontal line)
  -   Center at the origin
 
  -   Radius of a
+
 #### Sine Circle
  $$r = a\sin\theta$$ or $$r = - a\sin\theta$$
 
@@ -58,7 +60,8 @@ $$r = a\csc\theta$$ is the same as $$y = a$$(horizontal line)
  -   a dictates how far up or
      down the top/bottom of the
      circle is
-### Cosine Circle
+
+#### Cosine Circle
  $$r = a\cos\theta$$ or
  $$r = -a\cos\theta$$
 
@@ -99,10 +102,10 @@ If...
 
 Each petal is of a length.
 
- $$r^{2} = a^{2}sin2\theta$$        
+$$r^{2} = a^{2}sin2\theta$$        
                                   
- - Symmetrical to $$\theta = \frac{\pi}{4}$$ (the same as $$y = x$$)
+- Symmetrical to $$\theta = \frac{\pi}{4}$$ (the same as $$y = x$$)
 
- $$r^{2} = a^{2}cos2\theta$$        
+$$r^{2} = a^{2}cos2\theta$$        
 - Symmetrical to x-axis                  
                                   
