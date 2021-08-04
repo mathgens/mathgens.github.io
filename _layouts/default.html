@@ -11,11 +11,8 @@ layout: compress
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script>
-    MathJax = {
-     chtml: {
-        scale: 1.25,                      // global scaling factor for all expressions
-        minScale: 1,                  // smallest scaling factor to use
-    }
+    MathJax.chtml.scale = 1.25;
+    MathJax.chtml.minScale = 1;
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
