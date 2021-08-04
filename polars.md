@@ -102,8 +102,7 @@ If...
 
 Each petal is of a length.
 
-$$r^{2} = a^{2}sin2\theta$$        
-                                  
+$$r^{2} = a^{2}sin2\theta$$
 - Symmetrical to $$\theta = \frac{\pi}{4}$$ (the same as $$y = x$$)
 
 $$r^{2} = a^{2}cos2\theta$$        
