@@ -4,3 +4,5 @@ permalink: pretty
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+compress_html:
+  blanklines: true
