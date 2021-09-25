@@ -5,6 +5,7 @@ categories: [info, exponents, prealgebra]
 enable_mathjax: true
 ---
 These are all the major exponent rules:
+
 $$x^a\times x^b=x^{a+b}$$
 
 $$\frac{x^a}{x^b}=x^{a-b}$$
