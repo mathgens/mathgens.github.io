@@ -8,7 +8,7 @@ layout: default
 <a href="#{{tag[0]}}">{{ tag[0] | replace: "-", "&nbsp;" }}&nbsp;({{ tag[1] | size }})</a>
 
 {% endfor %}
-<h2 id="{{ tag[0] }}">{{ tag[0] | replace: "-", "&nbsp;" }</h2>
+<h2 id="{{ tag[0] }}">{{ tag[0] | replace: "-", "&nbsp;" }}</h2>
 
 {% for post in tag[1] %}
 
