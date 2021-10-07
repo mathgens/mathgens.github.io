@@ -5,6 +5,7 @@ categories: [info, physics]
 enable_mathjax: true
 ---
 Use these equations to solve kinematic equations:
+
 $$d=v_{i}t+\frac{1}{2}at^{2}$$
 
 $$v_{f}=v_{i}+at$$
