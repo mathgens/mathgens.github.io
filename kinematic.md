@@ -8,7 +8,7 @@ Use these equations to solve kinematic equations:
 
 $$d=\bar{v}t$$
 
-(↑ only used with constant velocity)
+<p align=center>(↑ only used with constant velocity)</p>
 
 $$v=\frac{d}{t}$$
 
