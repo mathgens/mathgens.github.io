@@ -6,7 +6,9 @@ enable_mathjax: true
 ---
 Use these equations to solve kinematic equations:
 
-$$d=\bar{v}t$$ (only used with constant velocity)
+$$d=\bar{v}t$$
+
+(↑ only used with constant velocity)
 
 $$v=\frac{d}{t}$$
 
