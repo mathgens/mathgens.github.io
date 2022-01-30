@@ -12,14 +12,8 @@ layout: compress
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
     @media print {
-      .no-print, section {
+      .no-print {
         visibility: hidden;
-      }
-      header h1 {
-        text-shadow: none;  
-      }
-      header {
-        box-shadow: none;
       }
     }  
     </style>
@@ -70,8 +64,8 @@ layout: compress
         <div class="no-print">
 <br><br>
       <details>
-  <summary>❓ How do I make the math bigger?</summary>
-  <p>Right-click or long press any of the math, then click Math Settings → Scale All Math... Type a number such as 125% or 200%.</p>
+  <summary>❓ How do I make the math bigger?</summary>
+  <p>Right-click or long press any of the math, then click Math Settings → Scale All Math... Type a number such as 125% or 200%.</p>
 </details>
         </div>
     {% endif %}
