@@ -12,8 +12,14 @@ layout: compress
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
     @media print {
-      .no-print {
+      .no-print, section {
         visibility: hidden;
+      }
+      header h1 {
+        text-shadow: none;  
+      }
+      header {
+        box-shadow: none;
       }
     }  
     </style>
