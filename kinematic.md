@@ -5,10 +5,9 @@ categories: [info, physics]
 enable_mathjax: true
 ---
 Use these equations to solve kinematic equations:
+## Uniformly Accelerated Motion (UAM)
 
-$$d=\bar{v}t$$
-
-<p align=center>(↑ only used with constant velocity)</p>
+$$g=9.81\frac{m}{s^{2}}$$
 
 $$v=\frac{d}{t}$$
 
@@ -22,4 +21,14 @@ $$v_{f}^{2}=v_{i}^{2}+2ad$$
 
 $$d=\frac{1}{2}(v_{i}+v_{f})t$$
 
-(Note: d is also sometimes written as $$\Delta x$$)
+## Constant Velocity Motion
+
+$$d=\bar{v}t$$
+
+(Note: d is also sometimes written as $$\Delta x$$ and sometimes $$d_{f}-d_{i}$$)
+## Free Fall
+When in free fall:
+
+$$a_{y}=-g=-9.81\frac{m}{s^{2}}$$ (therefore motion in y direction uses UAM equations)
+
+$$a_{x}=0\frac{m}{s^{2}}$$ (therefore motion in x direction uses constant velocity equations)
