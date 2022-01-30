@@ -5,11 +5,12 @@ categories: [info, physics]
 enable_mathjax: true
 ---
 Use these equations to solve kinematic equations:
+
+$$v=\frac{d}{t}$$
+
 ## Uniformly Accelerated Motion (UAM)
 
 $$g=9.81\frac{m}{s^{2}}$$
-
-$$v=\frac{d}{t}$$
 
 $$a=\frac{v_f-v_i}{t}$$
 
