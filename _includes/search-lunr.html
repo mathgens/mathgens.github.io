@@ -61,6 +61,11 @@ function lunr_search(term) {
     .lunrsearchresult a {display: block; color: #777;}
     .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
     .lunrsearchresult a:hover .title {text-decoration: underline;}
+    @media print {
+      #lunrsearch, #lunrsearchresults, .lunrsearchresult {
+        visibility: hidden;
+      }
+    } 
 </style>
 
 
