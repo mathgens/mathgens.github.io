@@ -1,0 +1,5 @@
+Sitemap: https://mathgens.github.io/sitemap.xml
+
+User-Agent: ia_archiver
+Disallow: /
+
