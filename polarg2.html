@@ -3,29 +3,31 @@ layout: default
 title: Polar Graphs
 categories: [ generators, precalc ]
 ---
-  <style>
-        /*body {
+<style>
+    /*body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }*/
 
-        #prob1 {
-            font-family: 'Cambria Math', Cambria, 'Times New Roman', Times, serif;
-            font-size: 1.5em;
-        }
-        iframe {
-            width: 100%;  
-        }
-        button {
-            font-family: unset;     
+    #prob1 {
+        font-family: 'Cambria Math', Cambria, 'Times New Roman', Times, serif;
+        font-size: 1.5em;
     }
-    </style>
+
+    iframe {
+        width: 100%;
+    }
+
+    button {
+        font-family: unset;
+    }
+</style>
 <!--<h1>Polar Graphs</h1>-->
-    <p>Please graph the problem: <b id="prob1"></b><br/>
-        <button id="copyprob">Copy in Desmos Format</button>
-        <button id="speak">Speak</button>
-        <button id="newrose">New Rose Problem</button>
-        <button id="newlima">New Limacon Problem</button>
-    </p>
+<p>Graph the problem:<br /><b id="prob1"></b><br />
+    <button id="copyprob">Copy in Desmos Format</button>
+    <button id="speak">Speak Problem</button>
+    <button id="newrose">New Rose Problem</button>
+    <button id="newlima">New Limacon Problem</button>
+</p>
 <p><i>Check your graph with Desmos below.</i>{% include desmos.html %}</p>
 <script defer>
     const randbool = () => Math.random() > .5 ? true : false
