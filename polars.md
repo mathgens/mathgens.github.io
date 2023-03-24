@@ -21,11 +21,11 @@ $$\tan\theta = \frac{y}{x}$$
 
 ### Coordinates
 
-#### R → P
+#### Rectangular → Polar
 
 $$(\sqrt{x^2+y^2},arctan(\frac{y}{x}))$$
 
-#### P → R
+#### Polar → Rectangular
 
 $$(rcos\theta,rsin\theta)$$
 
@@ -94,13 +94,14 @@ If...
     *2b* petals.
 
 -   Each petal is *a* units long.
+-   The period of these graphs is always π.
 
 
 
 ### Lemniscates
 
 
-Each petal is of a length.
+Each petal is of length $$a$$.
 
 $$r^{2} = a^{2}sin2\theta$$
 - Symmetrical to $$\theta = \frac{\pi}{4}$$ (the same as y = x)
