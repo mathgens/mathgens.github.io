@@ -14,9 +14,9 @@ to find all solutions to the quadratic equation.
 
 ## Formulas for the Solutions
 
-$$-\frac{b}{a}$$ is the sum of the solutions.
+$$-\frac{B}{A}$$ is the sum of the solutions.
 
-$$\frac{c}{a}$$ is the product of the solutions.
+$$\frac{C}{A}$$ is the product of the solutions.
 
 ## Discriminant
 The discriminant is $$B^{2}-4AC$$ (the part under the square root in the quadratic formula), and its value means one of three things:
