@@ -1,2 +1,2 @@
 # mathgens
-Simple webpages that generate math problems.
+A simple website with math problem generators and math help.
